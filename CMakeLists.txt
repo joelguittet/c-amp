@@ -6,8 +6,8 @@ set(c_flags "${c_flags} -Os -ffunction-sections -Wall -fPIC")
 set(linker_flags "${linker_flags} -Wl,-gc-sections")
 
 # Output directory
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build/bin)
 
 # List of sources
 file(GLOB_RECURSE src "src/*.c")
