@@ -8,7 +8,7 @@ This repository is not a fork of [node-amp](https://github.com/tj/node-amp) ! It
 
 Build `libamp.so` with the following commands:
 
-```
+``` bash
 cmake .
 make
 ```
@@ -16,17 +16,17 @@ make
 ## Examples
 
 Build examples with the following commands:
-```
+``` bash
 cmake .
 make amp_examples
 ```
 
 Examples can executed with:
-```
+``` bash
 bin/decoder
 ```
 and:
-```
+``` bash
 bin/encoder
 ```
 
