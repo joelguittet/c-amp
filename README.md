@@ -1,5 +1,7 @@
 # c-amp
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/84a24dea00694153ae2f5d72a56b4356)](https://app.codacy.com/gh/joelguittet/c-amp?utm_source=github.com&utm_medium=referral&utm_content=joelguittet/c-amp&utm_campaign=Badge_Grade_Settings)
+
 Abstract Message Protocol codec and streaming parser in C.
 
 This repository is not a fork of [node-amp](https://github.com/tj/node-amp) ! It has the same behavior but it is a complete library written in C in order to be portable and used in various applications.
