@@ -4,7 +4,7 @@
  *
  * MIT License
  *
- * Copyright (c) 2021-2023 joelguittet and c-amp contributors
+ * Copyright joelguittet and c-amp contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -75,7 +75,7 @@ main(int argc, char **argv) {
     cJSON_Delete(json);
 
     /* Encode AMP message */
-    void * buffer = NULL;
+    void  *buffer = NULL;
     size_t size   = 0;
     if (0 != amp_encode(amp, &buffer, &size)) {
         printf("unable to encode amp message\n");

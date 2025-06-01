@@ -4,7 +4,7 @@
  *
  * MIT License
  *
- * Copyright (c) 2021-2023 joelguittet and c-amp contributors
+ * Copyright joelguittet and c-amp contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -62,7 +62,7 @@ main(int argc, char **argv) {
                                  0x00, 0x00, 0x0a, 0x62, 0x3a, 0xd9, 0xed, 0xfa, 0x3a, 0x47, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00, 0x15, 0x6a, 0x3a, 0x7b,
                                  0x22, 0x70, 0x61, 0x79, 0x6c, 0x6f, 0x61, 0x64, 0x22, 0x3a, 0x22, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x22, 0x7d };
     size_t        size       = 58;
-    void *        buf        = malloc(size);
+    void         *buf        = malloc(size);
     if (NULL == buf) {
         printf("unable to malloc buffer\n");
         amp_release(amp);
@@ -81,7 +81,7 @@ main(int argc, char **argv) {
 
     /* Parse all fields of the message */
     int64_t      bint;
-    char *       str;
+    char        *str;
     amp_field_t *field = amp_get_first(amp);
     while (NULL != field) {
 
