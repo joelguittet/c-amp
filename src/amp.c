@@ -4,7 +4,7 @@
  *
  * MIT License
  *
- * Copyright (c) 2021-2023 joelguittet and c-amp contributors
+ * Copyright joelguittet and c-amp contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -83,11 +83,11 @@ amp_push(amp_msg_t *amp, amp_type_e type, ...) {
 
     assert(NULL != amp);
 
-    void *  blob = NULL;
+    void   *blob = NULL;
     size_t  size = 0;
-    char *  str  = NULL;
+    char   *str  = NULL;
     int64_t bint = 0;
-    cJSON * json = NULL;
+    cJSON  *json = NULL;
 
     /* Check number of fields in the message */
     if (AMP_MAX_FIELDS == amp->count) {
@@ -214,7 +214,7 @@ amp_encode(amp_msg_t *amp, void **buf, size_t *size) {
         /* Compute the length of the field */
         size_t len             = 0;
         size_t curr_field_size = 0;
-        void * data            = NULL;
+        void  *data            = NULL;
         switch (curr_field->type) {
             case AMP_TYPE_BLOB:
                 data            = curr_field->data;

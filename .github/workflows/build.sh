@@ -4,7 +4,7 @@
 #
 # MIT License
 #
-# Copyright (c) 2021-2023 joelguittet and c-amp contributors
+# Copyright joelguittet and c-amp contributors
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,5 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-mkdir build
-cd build
-cmake -DENABLE_AMP_EXAMPLES=ON ..
-make -j$(nproc)
+cmake -B build -DENABLE_AMP_EXAMPLES=ON .
+cmake --build build -j$(nproc)

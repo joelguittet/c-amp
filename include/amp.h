@@ -4,7 +4,7 @@
  *
  * MIT License
  *
- * Copyright (c) 2021-2023 joelguittet and c-amp contributors
+ * Copyright joelguittet and c-amp contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -105,7 +105,7 @@ typedef struct amp_field_s {
     struct amp_field_s *prev; /* Previous field of the message*/
     struct amp_field_s *next; /* Next field of the message*/
     amp_type_e          type; /* Type of the field */
-    void *              data; /* Data of the field */
+    void               *data; /* Data of the field */
     size_t              size; /* Size of the field */
 } amp_field_t;
 
