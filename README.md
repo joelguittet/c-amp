@@ -1,6 +1,7 @@
 # c-amp
 
-[![CI Badge](https://github.com/joelguittet/c-amp/workflows/ci/badge.svg)](https://github.com/joelguittet/c-amp/actions)
+[![Workflow check-code-format Badge](https://github.com/joelguittet/c-amp/workflows/check-code-format/badge.svg)](https://github.com/joelguittet/c-amp/actions)
+[![Workflow build Badge](https://github.com/joelguittet/c-amp/workflows/build/badge.svg)](https://github.com/joelguittet/c-amp/actions)
 [![Issues Badge](https://img.shields.io/github/issues/joelguittet/c-amp)](https://github.com/joelguittet/c-amp/issues)
 [![License Badge](https://img.shields.io/github/license/joelguittet/c-axon)](https://github.com/joelguittet/c-amp/blob/master/LICENSE)
 
